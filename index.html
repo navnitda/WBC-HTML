@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard Consultants | Best Education Kolkata in Kolkata</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google reCAPTCHA v3 Script -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdjtGsqAAAAAL9IgE048_TJAZOm1YYdJzBtWH9m"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="/Images/Logo for Mobile.webp" alt="Whiteboard Consultants" class="logo-img">
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#study-abroad" class="nav-link">STUDY ABROAD</a>
+                    <div class="dropdown-content">
+                        <a href="#usa" class="dropdown-link">Study in USA</a>
+                        <a href="#canada" class="dropdown-link">Study in Canada</a>
+                        <a href="#uk" class="dropdown-link">Study in the UK</a>
+                        <a href="#ireland" class="dropdown-link">Study in Ireland</a>
+                        <a href="#europe" class="dropdown-link">Study in Europe</a>
+                        <a href="#dubai" class="dropdown-link">Study in Dubai/UAE</a>
+                        <a href="#australia" class="dropdown-link">Study in Australia</a>
+                        <a href="#newzealand" class="dropdown-link">Study in New Zealand</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#test-prep" class="nav-link">TEST PREP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#admissions" class="nav-link">ADMISSIONS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skill-training" class="nav-link">SKILL TRAINING</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#expert-guides" class="nav-link">EXPERT GUIDES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#articles" class="nav-link">ARTICLES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Navbar -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Best Education Consultant in Kolkata for Study Abroad & Test Prep - Whiteboard
+                Consultants</h1>
+            <p class="hero-subtitle">Top Education Consultant in Kolkata for Study Abroad, TOEFL/IELTS Test Prep &
+                College Admissions. Get expert guidance for overseas education, competitive exam training, and career
+                success.</p>
+            <a href="#about" class="hero-btn">Get Started</a>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- Navbar Java Script -->
+    <script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Get DOM elements
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const dropdown = document.querySelector('.dropdown');
+            const dropdownLink = dropdown.querySelector('.nav-link');
+            const navbar = document.querySelector('.navbar');
+
+            // Mobile menu toggle function
+            function toggleMobileMenu() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            }
+
+            // Close mobile menu function
+            function closeMobileMenu() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+
+            // Handle mobile dropdown toggle
+            function toggleMobileDropdown(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            }
+
+            // Smooth scroll function
+            function smoothScroll(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+
+            // Navbar scroll effect
+            function handleNavbarScroll() {
+                if (window.scrollY > 50) {
+                    navbar.style.background = 'linear-gradient(135deg, rgba(0, 92, 180, 0.95) 0%, rgba(0, 61, 122, 0.95) 100%)';
+                    navbar.style.backdropFilter = 'blur(10px)';
+                } else {
+                    navbar.style.background = 'linear-gradient(135deg, #005CB4 0%, #003d7a 100%)';
+                    navbar.style.backdropFilter = 'none';
+                }
+            }
+
+            // Close mobile menu when clicking outside
+            function handleOutsideClick(e) {
+                if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                    closeMobileMenu();
+                }
+            }
+
+            // Event Listeners
+
+            // Hamburger menu click
+            hamburger.addEventListener('click', toggleMobileMenu);
+
+            // Close mobile menu when clicking on navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            // Handle mobile dropdown click
+            dropdownLink.addEventListener('click', toggleMobileDropdown);
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', smoothScroll);
+            });
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', handleNavbarScroll);
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', handleOutsideClick);
+
+            // Handle window resize
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) {
+                    closeMobileMenu();
+                }
+            });
+
+            // Keyboard navigation support
+            document.addEventListener('keydown', function (e) {
+                // Close mobile menu on Escape key
+                if (e.key === 'Escape') {
+                    closeMobileMenu();
+                }
+
+                // Toggle mobile menu on Enter/Space when hamburger is focused
+                if ((e.key === 'Enter' || e.key === ' ') && document.activeElement === hamburger) {
+                    e.preventDefault();
+                    toggleMobileMenu();
+                }
+            });
+
+            // Add focus support for hamburger button
+            hamburger.setAttribute('tabindex', '0');
+            hamburger.setAttribute('role', 'button');
+            hamburger.setAttribute('aria-label', 'Toggle navigation menu');
+            hamburger.setAttribute('aria-expanded', 'false');
+
+            // Update aria-expanded attribute when menu toggles
+            const observer = new MutationObserver(function (mutations) {
+                mutations.forEach(function (mutation) {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                        const isActive = hamburger.classList.contains('active');
+                        hamburger.setAttribute('aria-expanded', isActive.toString());
+                    }
+                });
+            });
+
+            observer.observe(hamburger, { attributes: true });
+
+            console.log('Navigation script loaded successfully!');
+        });
+    </script>
+    <!-- End of Navbar Java Script -->
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="grid-container">
+                <div class="content-column">
+                    <h2 class="section-title">Why Choose Whiteboard Consultants?</h2>
+                    <p class="intro-text">With over 30+ years in Education, we've been helping students achieve their
+                        academic and career goals with personalized guidance and expert mentorship.</p>
+
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <strong>Best Education Consultant in Kolkata</strong> – Comprehensive guidance for
+                            <strong>Study Abroad, College Admissions, and TOEFL Test Prep</strong>.
+                        </li>
+                        <li class="feature-item">
+                            <strong>Personalized Career Pathways</strong> – Tailored course recommendations for emerging
+                            fields like <strong>Data Science, AI, Cybersecurity, Fintech and Corporate
+                                Communication</strong>.
+                        </li>
+                        <li class="feature-item">
+                            <strong>Global Network of Universities</strong> – Access to top institutions in the
+                            <strong>USA, UK, Ireland, Germany, Canada, Australia, New Zealand and UAE/ Dubai</strong>.
+                        </li>
+                        <li class="feature-item">
+                            <strong>Proven Track Record</strong> – 90% success rate in <strong>College Admissions and
+                                Test Prep</strong>, helping students achieve career success globally.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Updated Form Column -->
+                <div class="form-column">
+                    <div class="form-header">
+                        <h3 class="form-title">Get Expert Guidance</h3>
+                        <p class="form-subtitle">Start your journey to study abroad with personalized consultation</p>
+                    </div>
+
+                    <!-- HubSpot Form Container -->
+                    <div id="hubspot-form-container">
+
+                        <!-- HubSpot form will be embedded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HubSpot Form Scripts -->
+    <script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+        // reCAPTCHA v3 integration
+        function executeRecaptcha(callback) {
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LdjtGsqAAAAAL9IgE048_TJAZOm1YYdJzBtWH9m', { action: 'form_submission' }).then(function (token) {
+                    callback(token);
+                });
+            });
+        }
+
+        // Wait for the HubSpot script to load
+        window.addEventListener('load', function () {
+            if (window.hbspt) {
+                hbspt.forms.create({
+                    portalId: "242177762",
+                    formId: "5b9bbec4-0755-49cc-a59b-08aaffd7e6f6",
+                    region: "na2",
+                    target: '#hubspot-form-container',
+                    onFormReady: function (form) {
+                        console.log('HubSpot form loaded successfully');
+
+                        // Add reCAPTCHA token field to the form
+                        const recaptchaField = document.createElement('input');
+                        recaptchaField.type = 'hidden';
+                        recaptchaField.name = 'g-recaptcha-response';
+                        recaptchaField.id = 'g-recaptcha-response';
+                        form.appendChild(recaptchaField);
+                    },
+                    onFormSubmit: function (form) {
+                        console.log('Form submission initiated');
+
+                        // Prevent default form submission
+                        event.preventDefault();
+
+                        // Execute reCAPTCHA and then submit form
+                        executeRecaptcha(function (token) {
+                            console.log('reCAPTCHA token generated:', token);
+
+                            // Add the token to the hidden field
+                            const recaptchaField = document.getElementById('g-recaptcha-response');
+                            if (recaptchaField) {
+                                recaptchaField.value = token;
+                            }
+
+                            // Submit the form programmatically
+                            const formElement = document.querySelector('#hubspot-form-container form');
+                            if (formElement) {
+                                // Create a new FormData object with all form data including reCAPTCHA token
+                                const formData = new FormData(formElement);
+                                formData.append('g-recaptcha-response', token);
+
+                                // Submit via HubSpot's API or let HubSpot handle it
+                                console.log('Form submitted with reCAPTCHA token');
+                                formElement.submit();
+                            }
+                        });
+                    },
+                    onFormSubmitted: function () {
+                        console.log('Form successfully submitted to HubSpot');
+                    }
+                });
+            }
+        });
+    </script>
+    <!--End Why Choose Us Section -->
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="services-container">
+            <!-- Header -->
+            <div class="services-header">
+                <h2 class="services-main-title">Your Future | Our Focus</h2>
+                <h3 class="services-main-subtitle">Best Education Consultant in Kolkata</h3>
+                <p class="services-description">
+                    Looking for trusted education guidance? We are your one-stop solution for all academic and career
+                    needs. As the <strong>best education consultant in Kolkata</strong>, we offer personalized support
+                    for <strong>study abroad programs</strong>, <strong>Indian college admissions</strong>, <strong>test
+                        preparation</strong>, <strong>skill development courses</strong>, and <strong>career placement
+                        services</strong>. Achieve your academic goals with expert advice and end-to-end assistance from
+                    our experienced team.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Study Abroad Card -->
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3 class="service-title">Study Abroad</h3>
+                    <p class="service-description">
+                        Study Abroad Made Easy! Get expert guidance for <strong>Ireland, UK, Germany, USA, Canada,
+                            Australia & Dubai</strong> for New Age Tech Programs—from university selection, to
+                        application, to visas & scholarships, loan and fund transfer, to accommodation. Secure your
+                        dream university spot with maximum financial aid.
+                    </p>
+                    <a href="#study-abroad" class="service-cta">Learn More</a>
+                </div>
+
+                <!-- Test Preparation Card -->
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3 class="service-title">Test Preparation</h3>
+                    <p class="service-description">
+                        Ace your <strong>TOEFL, IELTS, GMAT, GRE, or SMAT</strong> with our result-oriented coaching.
+                        Get personalized study plans, mock tests, and expert strategies to score high. Our top-rated
+                        trainers help you crack exams on the first attempt, unlocking doors to global universities and
+                        careers.
+                    </p>
+                    <a href="#test-prep" class="service-cta">Learn More</a>
+                </div>
+
+                <!-- College Admissions Card -->
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3 class="service-title">College Admissions</h3>
+                    <p class="service-description">
+                        Secure admission in <strong>top Indian colleges</strong> with our career counseling and
+                        application support. We guide you through entrance exams, cutoff analysis, and college selection
+                        to match your academic goals and budget.
+                    </p>
+                    <a href="#admissions" class="service-cta">Learn More</a>
+                </div>
+
+                <!-- Public Speaking Card -->
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3 class="service-title">Public Speaking Mastery</h3>
+                    <p class="service-description">
+                        Boost your confidence with our <strong>Public Speaking Training</strong> designed for students
+                        and professionals. Master presentation skills, persuasive speaking, and body language through
+                        expert-led workshops. Ideal for college presentations, corporate pitches, and leadership roles.
+                        Our proven methods help overcome stage fright and deliver impactful speeches that captivate
+                        audiences.
+                    </p>
+                    <a href="#public-speaking" class="service-cta">Learn More</a>
+                </div>
+
+                <!-- Spoken English Card -->
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3 class="service-title">Spoken English Mastery</h3>
+                    <p class="service-description">
+                        Fluency made easy! Our <strong>Spoken English Classes</strong> help you speak English
+                        confidently in interviews, meetings, and daily life. Improve pronunciation, vocabulary, and
+                        grammar with interactive sessions. Perfect for students, job seekers, and professionals aiming
+                        for global careers. Join now to eliminate hesitation and communicate like a pro!
+                    </p>
+                    <a href="#spoken-english" class="service-cta">Learn More</a>
+                </div>
+
+                <!-- Placement Training Card -->
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3 class="service-title">Placement Assisted Upskilling</h3>
+                    <p class="service-description">
+                        Crack campus placements with our <strong>Aptitude & Technical Test Coaching</strong>. Get
+                        company-specific mock tests, GD/PI training, and resume-building guidance for TCS, Infosys,
+                        Amazon, and more. Our industry-aligned curriculum ensures you clear aptitude rounds, technical
+                        interviews, and HR discussions with ease.
+                    </p>
+                    <a href="#placement-training" class="service-cta">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Services Section Animation Script
+        document.addEventListener('DOMContentLoaded', function () {
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all service cards
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(card => {
+                observer.observe(card);
+            });
+
+            // Smooth scroll for service CTAs
+            const serviceCTAs = document.querySelectorAll('.service-cta');
+            serviceCTAs.forEach(cta => {
+                cta.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+
+                    // Only prevent default if it's an anchor link
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Add hover effects for better interactivity
+            serviceCards.forEach((card, index) => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+
+                // Add staggered animation delay
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+
+            // Performance optimization: Remove observer after all cards are animated
+            let animatedCount = 0;
+            const totalCards = serviceCards.length;
+
+            serviceCards.forEach(card => {
+                card.addEventListener('animationend', function () {
+                    animatedCount++;
+                    if (animatedCount === totalCards) {
+                        observer.disconnect();
+                    }
+                });
+            });
+
+            // Log successful initialization
+            console.log('Services section initialized with', totalCards, 'service cards');
+        });
+
+        // Optional: Add parallax effect for background elements
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const servicesSection = document.querySelector('.services-section');
+
+            if (servicesSection) {
+                const rate = scrolled * -0.5;
+                servicesSection.style.backgroundPosition = `center ${rate}px`;
+            }
+        });
+    </script>
+
+    <!-- Emerging Career Programs Section -->
+    <section class="emerging-careers-section" id="emerging-careers">
+        <div class="et-careers-container">
+            <!-- Header -->
+            <div class="et-careers-header">
+                <h2 class="et-careers-main-title">Emerging Career Programs – Stay Ahead with In-Demand Skills in 2025</h2>
+                <h3 class="et-careers-subtitle">Future-Ready Tech Education for Global Careers</h3>
+                <p class="et-careers-description">
+                    Prepare for the careers of tomorrow with specialized programs in <strong>AI, Data Science, Cybersecurity, and Public Speaking</strong>. Whether you're aiming to <strong>Study Abroad</strong> in <strong>Ireland, the UK, the USA, or Germany</strong>, we provide expert guidance from program selection to visa assistance.
+                </p>
+            </div>
+
+            <!-- Program Categories -->
+            <div class="et-program-categories">
+                <!-- AI & Data Science Category -->
+                <div class="et-program-category">
+                    <div class="et-category-header">
+                        <div class="et-category-icon"></div>
+                        <div class="et-category-title">
+                            <h3 class="et-category-main-title">AI & Data Science</h3>
+                            <p class="et-category-sub-title">Accelerate Your Tech Career</p>
+                        </div>
+                    </div>
+
+                    <div class="et-countries-grid">
+                        <div class="et-country-card">
+                            <h4 class="et-country-name">
+                                <span class="et-country-flag">🇩🇪</span>Germany
+                            </h4>
+                            <p class="et-country-description">
+                                Study in <strong>Berlin, Munich, and Frankfurt</strong>, global tech hubs with cutting-edge AI and Data Science programs. Germany's strong economy offers excellent job prospects for tech graduates, particularly in <strong>automotive, engineering, and IT sectors</strong>.
+                            </p>
+                        </div>
+
+                        <div class="et-country-card">
+                            <h4 class="et-country-name">
+                                <span class="et-country-flag">🇮🇪</span>Ireland
+                            </h4>
+                            <p class="et-country-description">
+                                Master AI and Data Science in <strong>Dublin and Cork</strong>, cities known for tech innovation and job opportunities. Stay back for <strong>2 years</strong> with a post-study work visa.
+                            </p>
+                        </div>
+
+                        <div class="et-country-card">
+                            <h4 class="et-country-name">
+                                <span class="et-country-flag">🇬🇧</span>UK
+                            </h4>
+                            <p class="et-country-description">
+                                Access top-ranked programs in London and Manchester – the best destinations for <strong>Data Science, Big Data, and Machine Learning</strong>.
+                            </p>
+                        </div>
+
+                        <div class="et-country-card">
+                            <h4 class="et-country-name">
+                                <span class="et-country-flag">🇺🇸</span>USA
+                            </h4>
+                            <p class="et-country-description">
+                                Study in <strong>Silicon Valley, Boston, or New York</strong>, home to top-tier AI programs and global tech giants like <strong>Google, Amazon, and IBM</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="et-category-cta">
+                        <a href="#ai-consultation" class="et-cta-button">
+                            Ready to fast-track your tech career? Book a FREE Consultation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Category -->
+                <div class="et-program-category">
+                    <div class="et-category-header">
+                        <div class="et-category-icon"></div>
+                        <div class="et-category-title">
+                            <h3 class="et-category-main-title">Cybersecurity</h3>
+                            <p class="et-category-sub-title">Safeguard the Digital World</p>
+                        </div>
+                    </div>
+
+                    <div class="et-countries-grid">
+                        <div class="et-country-card">
+                            <h4 class="et-country-name">
+                                <span class="et-country-flag">🇩🇪</span>Germany
+                            </h4>
+                            <p class="et-country-description">
+                                Pursue top-ranked <strong>Cybersecurity programs</strong> in Frankfurt and Stuttgart, key cities for <strong>digital security and IT infrastructure</strong>. Graduates can stay back for up to <strong>18 months</strong> to gain work experience in global firms.
+                            </p>
+                        </div>
+
+                        <div class="et-country-card">
+                            <h4 class="et-country-name">
+                                <span class="et-country-flag">🇮🇪</span>Ireland
+                            </h4>
+                            <p class="et-country-description">
+                                Enroll in specialized <strong>Cybersecurity programs</strong>, backed by leading tech firms and government initiatives.
+                            </p>
+                        </div>
+
+                        <div class="et-country-card">
+                            <h4 class="et-country-name">
+                                <span class="et-country-flag">🇬🇧</span>UK
+                            </h4>
+                            <p class="et-country-description">
+                                Study at renowned institutions offering <strong>Digital Forensics and Data Protection courses</strong>, with a focus on global security practices.
+                            </p>
+                        </div>
+
+                        <div class="et-country-card">
+                            <h4 class="et-country-name">
+                                <span class="et-country-flag">🇺🇸</span>USA
+                            </h4>
+                            <p class="et-country-description">
+                                Gain hands-on experience in cybersecurity at universities in <strong>California and Virginia</strong>, hotspots for digital security and defense.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="et-category-cta">
+                        <a href="#cybersecurity-consultation" class="et-cta-button et-cta-secondary">
+                            Secure your spot in top Cybersecurity programs. Speak to Our Experts
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Emerging Career Programs Animation Script
+        document.addEventListener('DOMContentLoaded', function () {
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all program categories
+            const programCategories = document.querySelectorAll('.et-program-category');
+            programCategories.forEach(category => {
+                observer.observe(category);
+            });
+
+            // Enhanced hover effects for country cards
+            const countryCards = document.querySelectorAll('.et-country-card');
+            countryCards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Smooth scroll for CTAs
+            const ctaButtons = document.querySelectorAll('.et-cta-button');
+            ctaButtons.forEach(cta => {
+                cta.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+
+                    // Only prevent default if it's an anchor link
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Add hover effects for better interactivity
+            programCategories.forEach((category, index) => {
+                category.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-8px) scale(1.01)';
+                });
+
+                category.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+
+                // Add staggered animation delay
+                category.style.animationDelay = `${index * 0.2}s`;
+            });
+
+            // Performance optimization: Remove observer after all categories are animated
+            let animatedCount = 0;
+            const totalCategories = programCategories.length;
+
+            programCategories.forEach(category => {
+                category.addEventListener('animationend', function () {
+                    animatedCount++;
+                    if (animatedCount === totalCategories) {
+                        observer.disconnect();
+                    }
+                });
+            });
+
+            // Log successful initialization
+            console.log('Emerging Career Programs section initialized with', totalCategories, 'program categories');
+        });
+
+        // Optional: Add parallax effect for background elements
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const emergingSection = document.querySelector('.et-emerging-careers-section');
+
+            if (emergingSection) {
+                const rate = scrolled * -0.5;
+                emergingSection.style.backgroundPosition = `center ${rate}px`;
+            }
+        });
+    </script>
+    <!-- End of Emerging Technologies -->
+
+    <!-- Public Speaking & Communication Section -->
+    <!-- Public Speaking & Communication Section -->
+    <section class="public-speaking-section" id="public-speaking">
+        <div class="speaking-container">
+            <!-- Header -->
+            <div class="speaking-header">
+                <h2 class="speaking-main-title">Public Speaking & Communication – A Global Skill for Academic and Career Success</h2>
+                <h3 class="speaking-subtitle">Transform Your Voice, Transform Your Future</h3>
+                <p class="speaking-description">
+                    <strong>Public speaking</strong> is more than just delivering a speech – it's a transformative skill that builds confidence, enhances leadership abilities, and opens doors to global opportunities. At <strong>Whiteboard Consultants</strong>, Your Top Education Consultant in Kolkata, we provide specialized <strong>Public Speaking Training</strong> tailored for students and professionals aspiring to study abroad.
+                </p>
+
+                <!-- Global Impact Stats -->
+                <div class="global-impact-stats">
+                    <div class="ps-impact-stat">
+                        <div class="ps-stat-number">85%</div>
+                        <div class="ps-stat-label">Career Success Attributed to Communication Skills</div>
+                    </div>
+                    <div class="ps-impact-stat">
+                        <div class="ps-stat-number">70%</div>
+                        <div class="ps-stat-label">Higher Admission Rates with Strong Interview Skills</div>
+                    </div>
+                    <div class="ps-impact-stat">
+                        <div class="ps-stat-number">60%</div>
+                        <div class="ps-stat-label">Salary Increase for Confident Communicators</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Categories -->
+            <div class="student-categories">
+                <!-- School Students Category -->
+                <div class="student-category">
+                    <div class="category-header">
+                        <div class="category-icon">🎓</div>
+                        <div class="category-title">
+                            <h3 class="category-main-title">School Students</h3>
+                            <p class="category-sub-title">Laying the Foundation for Academic and Global Success</p>
+                        </div>
+                    </div>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🏆</div>
+                            <h4 class="benefit-title">Excel in Classroom Presentations</h4>
+                            <p class="benefit-description">
+                                Develop the confidence to present ideas clearly, whether in a school debate in India or a class project in a top university abroad.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🎯</div>
+                            <h4 class="benefit-title">Prepare for Study Abroad Interviews</h4>
+                            <p class="benefit-description">
+                                Master the art of storytelling to stand out in <strong>university admissions interviews in the USA, UK, and Ireland</strong>.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🌍</div>
+                            <h4 class="benefit-title">Participate in International Competitions</h4>
+                            <p class="benefit-description">
+                                Develop persuasive speaking skills to shine in <strong>global student forums and model UNs</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="category-cta">
+                        <a href="#school-consultation" class="cta-button">
+                            Equip Your Child for Global Success! Book a FREE Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- College Students Category -->
+                <div class="student-category">
+                    <div class="category-header">
+                        <div class="category-icon">📚</div>
+                        <div class="category-title">
+                            <h3 class="category-main-title">College Students</h3>
+                            <p class="category-sub-title">Amplify Your Voice Locally and Internationally</p>
+                        </div>
+                    </div>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">💡</div>
+                            <h4 class="benefit-title">Lead Academic Projects with Impact</h4>
+                            <p class="benefit-description">
+                                Deliver compelling presentations in Indian colleges and during <strong>semester exchanges or internships abroad</strong>.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🤝</div>
+                            <h4 class="benefit-title">Network with Global Experts</h4>
+                            <p class="benefit-description">
+                                Gain the confidence to connect with professors, alumni, and potential employers in the <strong>USA, Germany, and Canada</strong>.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">📝</div>
+                            <h4 class="benefit-title">Prepare for Study Abroad Applications</h4>
+                            <p class="benefit-description">
+                                Communicate effectively in <strong>SOPs, interviews, and scholarship presentations</strong> to increase your chances of acceptance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="category-cta">
+                        <a href="#college-consultation" class="cta-button cta-secondary">
+                            Stand Out in Global Classrooms and Internships! Call Today
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Freshers Category -->
+                <div class="student-category">
+                    <div class="category-header">
+                        <div class="category-icon">🚀</div>
+                        <div class="category-title">
+                            <h3 class="category-main-title">Freshers</h3>
+                            <p class="category-sub-title">Building a Global Career from Day One</p>
+                        </div>
+                    </div>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🎯</div>
+                            <h4 class="benefit-title">Ace Campus Recruitment in India</h4>
+                            <p class="benefit-description">
+                                Impress recruiters during <strong>group discussions and interviews</strong> at leading Indian companies like <strong>TCS, Infosys, and Wipro</strong>.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🌐</div>
+                            <h4 class="benefit-title">International Networking</h4>
+                            <p class="benefit-description">
+                                Master networking techniques to connect with <strong>global recruiters and university representatives</strong>.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">💼</div>
+                            <h4 class="benefit-title">Internship Success Abroad</h4>
+                            <p class="benefit-description">
+                                Effectively present project ideas and reports to diverse, multicultural teams in the <strong>USA, UK, or Australia</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="category-cta">
+                        <a href="#freshers-consultation" class="cta-button cta-tertiary">
+                            Launch Your Career with Confidence! Speak with Confidence
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Working Professionals Category -->
+                <div class="student-category">
+                    <div class="category-header">
+                        <div class="category-icon">👔</div>
+                        <div class="category-title">
+                            <h3 class="category-main-title">Early Working Professionals</h3>
+                            <p class="category-sub-title">Elevate Your Global Profile</p>
+                        </div>
+                    </div>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">📈</div>
+                            <h4 class="benefit-title">Present with Impact</h4>
+                            <p class="benefit-description">
+                                Deliver persuasive pitches and business presentations to <strong>clients in India and overseas</strong>.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🤝</div>
+                            <h4 class="benefit-title">Leadership and Negotiation</h4>
+                            <p class="benefit-description">
+                                Develop the executive presence needed for <strong>cross-cultural negotiations in global firms</strong>.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🌍</div>
+                            <h4 class="benefit-title">Transition to International Roles</h4>
+                            <p class="benefit-description">
+                                Enhance your communication skills to qualify for <strong>on-site assignments in Germany, Dubai, or Canada</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="category-cta">
+                        <a href="#professionals-consultation" class="cta-button cta-quaternary">
+                            Ready to Take Your Career Global? Enroll in Our Public Speaking Program
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Global Success Banner -->
+            <div class="global-success-banner">
+                <div class="banner-content">
+                    <h3 class="banner-title">Why Public Speaking Matters – From Indian Classrooms to Global Campuses</h3>
+                    <p class="banner-subtitle">Join thousands of students and professionals who have transformed their careers through confident communication</p>
+                    <a href="#master-consultation" class="banner-cta">
+                        Start Your Transformation Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Public Speaking Section Animation Script
+        document.addEventListener('DOMContentLoaded', function () {
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all student categories
+            const studentCategories = document.querySelectorAll('.student-category');
+            studentCategories.forEach(category => {
+                observer.observe(category);
+            });
+
+            // Enhanced hover effects for benefit cards
+            const benefitCards = document.querySelectorAll('.benefit-card');
+            benefitCards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Smooth scroll for CTAs
+            const ctaButtons = document.querySelectorAll('.cta-button, .banner-cta');
+            ctaButtons.forEach(cta => {
+                cta.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+
+                    // Only prevent default if it's an anchor link
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Add hover effects for better interactivity
+            studentCategories.forEach((category, index) => {
+                category.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-8px) scale(1.01)';
+                });
+
+                category.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+
+                // Add staggered animation delay
+                category.style.animationDelay = `${index * 0.2}s`;
+            });
+
+            // Add interactive effects to impact stats
+            const impactStats = document.querySelectorAll('.impact-stat');
+            impactStats.forEach(stat => {
+                stat.addEventListener('mouseenter', function () {
+                    const number = this.querySelector('.ps-stat-number');
+                    number.style.transform = 'scale(1.1)';
+                    number.style.transition = 'transform 0.3s ease';
+                });
+
+                stat.addEventListener('mouseleave', function () {
+                    const number = this.querySelector('.ps-stat-number');
+                    number.style.transform = 'scale(1)';
+                });
+            });
+
+            // Performance optimization: Remove observer after all categories are animated
+            let animatedCount = 0;
+            const totalCategories = studentCategories.length;
+
+            studentCategories.forEach(category => {
+                category.addEventListener('animationend', function () {
+                    animatedCount++;
+                    if (animatedCount === totalCategories) {
+                        observer.disconnect();
+                    }
+                });
+            });
+
+            // Log successful initialization
+            console.log('Public Speaking section initialized with', totalCategories, 'student categories');
+        });
+
+        // Optional: Add parallax effect for background elements
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const speakingSection = document.querySelector('.public-speaking-section');
+
+            if (speakingSection) {
+                const rate = scrolled * -0.5;
+                speakingSection.style.backgroundPosition = `center ${rate}px`;
+            }
+        });
+    </script>
+    <!-- End of Public Speaking Section -->
+
+    <!-- Global Admission Consulting Section -->
+    <section class="admission-consulting-section" id="admission-consulting">
+        <div class="admission-container">
+            <!-- Header -->
+            <div class="admission-header">
+                <h2 class="admission-main-title">Global University Admission Consulting</h2>
+                <h3 class="admission-subtitle">Your Gateway to World-Class Education</h3>
+                <p class="admission-description">
+                    Transform your academic dreams into reality with our comprehensive <strong>university admission consulting services</strong>. We provide expert guidance for <strong>college admissions</strong> and <strong>study abroad programs</strong> across multiple countries, ensuring you secure admission to your dream institution with maximum scholarships and financial aid.
+                </p>
+            </div>
+
+            <!-- Countries We Serve -->
+            <div class="countries-grid">
+                <div class="country-tag">🇮🇳 India</div>
+                <div class="country-tag">🇺🇸 United States</div>
+                <div class="country-tag">🇨🇦 Canada</div>
+                <div class="country-tag">🇬🇧 United Kingdom</div>
+                <div class="country-tag">🇮🇪 Ireland</div>
+                <div class="country-tag">🇩🇪 Germany</div>
+                <div class="country-tag">🇫🇷 France</div>
+                <div class="country-tag">🇪🇸 Spain</div>
+                <div class="country-tag">🇦🇺 Australia</div>
+                <div class="country-tag">🇳🇿 New Zealand</div>
+                <div class="country-tag">🇦🇪 UAE/Dubai</div>
+            </div>
+
+            <!-- Services Highlight -->
+            <div class="services-highlight">
+                <h3 class="services-title">Complete Admission Support Services</h3>
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-icon"></div>
+                        <span class="service-text">College Shortlisting & Selection</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"></div>
+                        <span class="service-text">Application Assistance</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"></div>
+                        <span class="service-text">SOP & LOR Writing Support</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"></div>
+                        <span class="service-text">Education Loan Guidance</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"></div>
+                        <span class="service-text">Fund Transfer Solutions</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"></div>
+                        <span class="service-text">Visa Processing Support</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"></div>
+                        <span class="service-text">Accommodation Assistance</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"></div>
+                        <span class="service-text">Scholarship Applications</span>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="cta-section">
+                    <a href="tel:+919876543210" class="cta-button cta-primary phone-icon">
+                        Call Us Now
+                    </a>
+                    <a href="#booking" class="cta-button cta-secondary calendar-icon">
+                        Book An Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe country tags
+            const countryTags = document.querySelectorAll('.country-tag');
+            countryTags.forEach(tag => {
+                observer.observe(tag);
+            });
+
+            // Observe services highlight section
+            const servicesHighlight = document.querySelector('.services-highlight');
+            if (servicesHighlight) {
+                observer.observe(servicesHighlight);
+            }
+
+            // Enhanced hover effects for country tags
+            countryTags.forEach(tag => {
+                tag.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.05)';
+                    this.style.boxShadow = '0 12px 30px rgba(0, 92, 180, 0.4)';
+                });
+
+                tag.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                    this.style.boxShadow = '0 4px 15px rgba(0, 92, 180, 0.2)';
+                });
+            });
+
+            // CTA button click tracking
+            const ctaButtons = document.querySelectorAll('.cta-button');
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Add ripple effect
+                    const ripple = document.createElement('span');
+                    ripple.classList.add('ripple');
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+
+            // Phone number click handler
+            const phoneButton = document.querySelector('.phone-icon');
+            phoneButton.addEventListener('click', function(e) {
+                // You can replace this with your actual phone number
+                this.href = 'tel:+919876543210';
+            });
+
+            // Booking appointment handler
+            const bookingButton = document.querySelector('.calendar-icon');
+            bookingButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Replace with your actual booking system URL or function
+                alert('Booking system integration needed. Replace this with your booking URL or function.');
+            });
+
+            // Smooth scroll enhancement
+            const smoothScroll = (target) => {
+                const element = document.querySelector(target);
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            };
+
+            // Performance optimization
+            let animatedElements = 0;
+            const totalElements = countryTags.length + 1; // +1 for services highlight
+
+            const checkAnimationComplete = () => {
+                animatedElements++;
+                if (animatedElements >= totalElements) {
+                    observer.disconnect();
+                    console.log('All admission consulting animations completed');
+                }
+            };
+
+            // Add animation completion listeners
+            countryTags.forEach(tag => {
+                tag.addEventListener('animationend', checkAnimationComplete);
+            });
+
+            if (servicesHighlight) {
+                servicesHighlight.addEventListener('animationend', checkAnimationComplete);
+            }
+
+            console.log('Global Admission Consulting section initialized successfully');
+        });
+
+        // Optional: Add parallax scrolling effect
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const admissionSection = document.querySelector('.admission-consulting-section');
+            
+            if (admissionSection) {
+                const rate = scrolled * -0.3;
+                admissionSection.style.backgroundPosition = `center ${rate}px`;
+            }
+        });
+    </script>
+    <!-- End of Consulting -->
+
+    <!-- Statistics Counter Section -->
+    <section class="stats-section" id="statistics">
+        <div class="stats-container">
+            <!-- Header -->
+            <div class="stats-header">
+                <h2 class="stats-main-title">Our Success Story</h2>
+                <p class="stats-subtitle">Proven track record of excellence in education consulting</p>
+            </div>
+
+            <!-- Statistics Grid -->
+            <div class="stats-grid">
+                <!-- Countries Stat -->
+                <div class="stat-card">
+                    <div class="stat-icon countries-icon"></div>
+                    <div class="stat-number" data-target="31">
+                        0<span class="stat-plus">+</span>
+                    </div>
+                    <div class="stat-label">Countries</div>
+                    <div class="stat-description">Global reach across continents</div>
+                </div>
+
+                <!-- Partner Universities Stat -->
+                <div class="stat-card">
+                    <div class="stat-icon universities-icon"></div>
+                    <div class="stat-number" data-target="850">
+                        0<span class="stat-plus">+</span>
+                    </div>
+                    <div class="stat-label">Partner Universities</div>
+                    <div class="stat-description">Top-ranked institutions worldwide</div>
+                </div>
+
+                <!-- Students Impacted Stat -->
+                <div class="stat-card">
+                    <div class="stat-icon students-icon"></div>
+                    <div class="stat-number" data-target="1500">
+                        0<span class="stat-plus">+</span>
+                    </div>
+                    <div class="stat-label">Students Impacted</div>
+                    <div class="stat-description">Dreams turned into reality</div>
+                </div>
+
+                <!-- Test Prep Success Ratio Stat -->
+                <div class="stat-card">
+                    <div class="stat-icon success-icon"></div>
+                    <div class="stat-number" data-target="98">
+                        0<span class="stat-percent">%</span>
+                    </div>
+                    <div class="stat-label">Test Prep Success Ratio</div>
+                    <div class="stat-description">Exceptional results guaranteed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Animation and counter functionality
+            const observerOptions = {
+                threshold: 0.3,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            // Counter animation function
+            function animateCounter(element, target, duration = 2000) {
+                const startValue = 0;
+                const increment = target / (duration / 16); // 60fps
+                let current = startValue;
+
+                element.classList.add('loading');
+
+                const timer = setInterval(() => {
+                    current += increment;
+
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                        element.classList.remove('loading');
+                    }
+
+                    // Update the number display
+                    const suffix = element.querySelector('.stat-plus') ? '+' :
+                        element.querySelector('.stat-percent') ? '%' : '';
+
+                    if (suffix === '%') {
+                        element.innerHTML = Math.floor(current) + '<span class="stat-percent">%</span>';
+                    } else if (suffix === '+') {
+                        element.innerHTML = Math.floor(current).toLocaleString() + '<span class="stat-plus">+</span>';
+                    } else {
+                        element.innerHTML = Math.floor(current).toLocaleString();
+                    }
+
+                    // Add counting effect
+                    element.classList.add('counting');
+                    setTimeout(() => element.classList.remove('counting'), 300);
+                }, 16);
+            }
+
+            // Intersection Observer for scroll animations
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const card = entry.target;
+                        card.classList.add('animate');
+
+                        // Start counter animation after card animation
+                        setTimeout(() => {
+                            const numberElement = card.querySelector('.stat-number');
+                            const target = parseInt(numberElement.getAttribute('data-target'));
+
+                            if (target) {
+                                animateCounter(numberElement, target);
+                            }
+                        }, 800); // Delay to let card animation complete
+
+                        // Remove observer after animation starts
+                        observer.unobserve(card);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all stat cards
+            const statCards = document.querySelectorAll('.stat-card');
+            statCards.forEach(card => {
+                observer.observe(card);
+            });
+
+            // Enhanced hover effects
+            statCards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-15px) scale(1.05)';
+                    this.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.3)';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+
+            // Add ripple effect on click
+            statCards.forEach(card => {
+                card.addEventListener('click', function (e) {
+                    const ripple = document.createElement('div');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+
+                    ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${x}px;
+                    top: ${y}px;
+                    background: rgba(255, 255, 255, 0.2);
+                    border-radius: 50%;
+                    transform: scale(0);
+                    animation: ripple 0.6s ease-out;
+                    pointer-events: none;
+                `;
+
+                    this.appendChild(ripple);
+
+                    setTimeout(() => ripple.remove(), 600);
+                });
+            });
+
+            // Add CSS for ripple animation
+            const style = document.createElement('style');
+            style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(2);
+                    opacity: 0;
+                }
+            }
+            .stat-card {
+                position: relative;
+                overflow: hidden;
+            }
+        `;
+            document.head.appendChild(style);
+
+            // Performance tracking
+            let animatedCards = 0;
+            const totalCards = statCards.length;
+
+            statCards.forEach(card => {
+                card.addEventListener('animationend', function () {
+                    animatedCards++;
+                    if (animatedCards === totalCards) {
+                        console.log('All statistics animations completed successfully');
+                    }
+                });
+            });
+
+            // Optional: Reset counters on visibility change (for demo purposes)
+            document.addEventListener('visibilitychange', function () {
+                if (!document.hidden) {
+                    // Restart animations when tab becomes visible again
+                    setTimeout(() => {
+                        statCards.forEach(card => {
+                            if (card.classList.contains('animate')) {
+                                const numberElement = card.querySelector('.stat-number');
+                                const target = parseInt(numberElement.getAttribute('data-target'));
+                                if (target) {
+                                    animateCounter(numberElement, target, 1500);
+                                }
+                            }
+                        });
+                    }, 500);
+                }
+            });
+
+            console.log('Statistics counter section initialized with', totalCards, 'stat cards');
+        });
+
+        // Optional: Add parallax effect
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const statsSection = document.querySelector('.stats-section');
+
+            if (statsSection) {
+                const rate = scrolled * 0.5;
+                statsSection.style.backgroundPosition = `center ${rate}px`;
+            }
+        });
+    </script>
+    <!-- End Statistics Counter Section -->
+
+     <!-- Success Stories Testimonials Section -->
+     <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-container">
+            <!-- Header -->
+            <div class="testimonials-header">
+                <h2 class="testimonials-main-title">Success Stories</h2>
+                <h3 class="testimonials-subtitle">Hear from our parents & students who achieved their dreams with our guidance</h3>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="testimonials-grid">
+                <!-- Student Testimonial -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            The <span class="highlight-text">English proficiency training</span> at Whiteboard Consultants is top-notch! The instructors are experienced and provide tailored guidance to help improve speaking, writing, and overall language skills. The mock tests and interactive sessions helped me score high on my TOEFL exam. Their tips and strategies made all the difference! I'm grateful for their support and highly recommend their services to anyone preparing for TOEFL. A Big thank you to Nigel Sir for making it possible for me to score 90.
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">KS</div>
+                        <div class="author-info">
+                            <div class="author-name">Kishan Kumar Singh</div>
+                            <div class="author-title">MS in Computer Science, NCI</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parent Testimonial -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            I was surfing the net in search of <span class="highlight-text">Top Educational Consultant in Kolkata</span>, when I chanced upon Whiteboard Consultants. I have to admit that they were a great help in zeroing in on what the best option was for my son. They were very patient and extremely polite when it came to quenching all my silly queries. The team is very professional and go out of their way to take all the pains. I strongly recommend <span class="highlight-text">Whiteboard Consultants</span> if you're on the lookout for the top Educational Consultant in Kolkata. Thanks Whiteboard Consultants!
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">NS</div>
+                        <div class="author-info">
+                            <div class="author-name">Navin Sehgal</div>
+                            <div class="author-title">Parent</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Metrics -->
+            <div class="success-metrics">
+                <h3 class="metrics-title">Our Track Record of Success</h3>
+                <div class="metrics-grid">
+                    <div class="metric-item">
+                        <span class="metric-number">500+</span>
+                        <span class="metric-label">Students Placed</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-number">95%</span>
+                        <span class="metric-label">Visa Success Rate</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-number">50+</span>
+                        <span class="metric-label">University Partners</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-number">15+</span>
+                        <span class="metric-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Testimonials Section Animation Script
+        document.addEventListener('DOMContentLoaded', function () {
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all testimonial cards
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            testimonialCards.forEach(card => {
+                observer.observe(card);
+            });
+
+            // Enhanced hover effects for testimonial cards
+            testimonialCards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-12px) scale(1.02)';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add staggered animation delays
+            testimonialCards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.2}s`;
+            });
+
+            // Animate metrics numbers on scroll
+            const metricNumbers = document.querySelectorAll('.metric-number');
+            const metricsObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const finalNumber = entry.target.textContent;
+                        const isPercentage = finalNumber.includes('%');
+                        const isPlus = finalNumber.includes('+');
+                        const numericValue = parseInt(finalNumber.replace(/[^\d]/g, ''));
+                        
+                        animateNumber(entry.target, 0, numericValue, 2000, isPercentage, isPlus);
+                        metricsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            metricNumbers.forEach(number => {
+                metricsObserver.observe(number);
+            });
+
+            // Number animation function
+            function animateNumber(element, start, end, duration, isPercentage = false, isPlus = false) {
+                const startTime = performance.now();
+                
+                function updateNumber(currentTime) {
+                    const elapsedTime = currentTime - startTime;
+                    const progress = Math.min(elapsedTime / duration, 1);
+                    const currentNumber = Math.floor(start + (end - start) * easeOutQuart(progress));
+                    
+                    let displayValue = currentNumber.toString();
+                    if (isPercentage) displayValue += '%';
+                    if (isPlus) displayValue += '+';
+                    
+                    element.textContent = displayValue;
+                    
+                    if (progress < 1) {
+                        requestAnimationFrame(updateNumber);
+                    }
+                }
+                
+                requestAnimationFrame(updateNumber);
+            }
+
+            // Easing function for smooth animation
+            function easeOutQuart(t) {
+                return 1 - Math.pow(1 - t, 4);
+            }
+
+            // Performance optimization: Remove observers after animations complete
+            let animatedCount = 0;
+            const totalCards = testimonialCards.length;
+
+            testimonialCards.forEach(card => {
+                card.addEventListener('animationend', function () {
+                    animatedCount++;
+                    if (animatedCount === totalCards) {
+                        observer.disconnect();
+                    }
+                });
+            });
+
+            // Log successful initialization
+            console.log('Testimonials section initialized with', totalCards, 'testimonial cards');
+        });
+
+        // Optional: Add parallax effect for background elements
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const testimonialsSection = document.querySelector('.testimonials-section');
+
+            if (testimonialsSection) {
+                const rate = scrolled * -0.3;
+                testimonialsSection.style.backgroundPosition = `center ${rate}px`;
+            }
+        });
+        // End Of Testimonial Section//
+    </script>
+</body>
+
+</html>
